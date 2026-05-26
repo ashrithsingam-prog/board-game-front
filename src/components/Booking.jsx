@@ -26,7 +26,7 @@ export default function Booking() {
     setIsLoading(true);
 
     try {
-      const res = await fetch('http://127.0.0.1:3000/api/bookings', {
+      const res = await fetch("http://localhost:3000/api/bookings", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
